@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*links*/
+
+.header_links, .primary_btn, .promo_btn, .tab_btn, .footer_link{
+    font-size: 20px;
+    font-family: var(--Raleway_M);
+    font-weight: 500;
+    cursor: pointer;
+    outline: transparent;
+}
+
+.primary_btn, .promo_btn{
+    padding: 21px 60px;
+}
+
+.header_links, .footer_link{
+    color: var(--dark_gray);
+    text-decoration: none;
+}
+.header_links:hover,  .footer_dir a:hover{
+    color: var(--hover_green);
+}
+.header_links:focus, .footer_dir a:focus{
+    background: var(--focus_green);
+    outline-offset: 0px 5px;
+    
+}
+.header_links:active, .footer_dir a:active{
+    color:var(--dark_green);
+}
+
+/*Buttons*/
+
+.primary_btn{
+    border: 1px solid var(--hover_green);
+    background: transparent;
+    color: var(--hover_green);
+    
+}
+
+.primary_btn:hover, .tab_btn:hover{
+    color: var(--white);
+    background: var(--hover_green);
+    border-color:var(--hover_green);
+}
+.primary_btn:focus, .tab_btn:focus{
+    color: var(--hover_green);
+    background: var(--focus_green);
+}
+.primary_btn:active, .tab_btn:active{
+    color: white;
+    background: var(--hover_green);
+}
+
+.promo_btn{
+    background: var(--default_yellow);
+    border: 1px solid var(--default_yellow);
+    color: var(--dark_gray);
+}
+
+.promo_btn:hover{
+    background: var(--hover_yellow);
+    border-color:var(--hover_yellow);
+}
+.promo_btn:focus{
+    background: var(--hover_yellow);
+    border-color: var(--ochra);
+}
+.promo_btn:active{
+    border-color: var(--ochra);
+    background: var(--ochra);
+}
+
+.tab_btn{
+    color: var(--dark_gray);
+    background: var(--focus_green);
+    border: 1px solid var(--focus_green);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.tab_btn:focus{
+    border-width: 2px;
+}

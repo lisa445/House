@@ -1,0 +1,144 @@
+.main_reproduction h2, .card p:first-of-type, .card h3, .card p:last-of-type, .count{
+    font-family: var(--Raleway_M);
+    font-weight: 500;
+}
+
+.reproduction{
+    padding: 0 165px;
+    margin-bottom: 50px;
+}
+.main_reproduction, .reproduction_button{
+    display: flex;
+}
+.main_reproduction{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.main_reproduction h2{
+    color:var(--dark_gray);
+    font-size: 40px;
+    line-height: 110%;
+}
+.reproduction_button{
+    align-items: center;
+}
+.reproduction_button button{
+    margin-right: 32px;
+}
+.reproduction_button button:last-child{
+    margin-right: 0;
+}
+
+
+
+/*Стиль карточки*/
+.card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width:330px;
+    background: var(--light_green);
+    padding: 20px 20px 30px 20px;
+}
+.card img{
+    margin-bottom: 20px;
+}
+.card p:first-of-type{
+    color: var(--light_gray);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.card h3{
+    color: var(--dark_gray);
+    font-size: 30px;
+    margin-bottom:10px;
+}
+.card p:last-of-type{
+    color: var(--dark_gray);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.count{
+    color: var(--hover_green);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/*Cетка картин*/
+.reproduction_grid{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(3,auto);
+    gap: 30px;
+}
+
+@media(max-width:780px){
+    .reproduction{
+        padding: 0 39px;
+    }
+    .main_reproduction h2{
+        font-size: 30px;
+    }
+    .reproduction_grid{
+        grid-template-rows: repeat(3,auto);
+        grid-template-columns: repeat(2,auto);
+    }
+    /*Изменение карточки*/
+    .card{
+        width: 300px;
+    }
+}
+
+@media(max-width:580px){
+    .main_reproduction{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main_reproduction h2{
+        margin-bottom: 20px;
+    }
+    .reproduction{
+        padding: 0 33px;
+    }
+    .card{
+        width: 200px;
+    }
+    .card p:first-of-type, .card p:last-of-type{
+        font-size: 16px;
+    }
+    .card h3{
+        font-size: 24px;
+    }
+    .count{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .card button{
+        font-size: 18px;
+        padding: 14px 57px;
+    }
+}
+
+@media(max-width:320px){
+    .reproduction_button{ /*Прокрутка добавляется с помощью js*/
+        flex-wrap: wrap;
+    }
+    .reproduction{
+        padding: 0 15px;
+        margin-bottom: 60px;
+    }
+    .reproduction_grid{
+        grid-template-rows: repeat(6,auto);
+        grid-template-columns: repeat(1,auto);
+
+    }
+    .card{
+        width: 240px;
+    }
+    .card img{
+        width: 240px;
+        height: 240px;
+    }
+}

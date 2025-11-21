@@ -1,0 +1,111 @@
+.main_desc, .description {
+    display: flex;
+    align-items: center;
+}
+.main_desc{
+    padding: 0 165px;
+    margin-bottom: 70px;
+}
+.description{
+    flex-direction: column;
+    width: 540px;
+    margin-left: 30px;
+}
+.main_text, .description h1{
+    font-family: var(--Raleway_M);
+    font-weight: 500;
+}
+
+.main_description{
+    color: var(--light_gray);
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 60px;
+}
+.description h1{
+    font-size: 60px;
+    line-height: 110%;
+    color: var(--dark_gray);
+    margin-bottom: 20px;
+}
+
+.description h1 span{
+    color: var(--hover_green);
+}
+.description button{
+    align-self: flex-start;
+}
+
+@media(max-width:780px){
+    .main_desc{
+        padding: 0 39px;
+    }   
+    .description{
+        width: 330px;
+    }
+    .main_description{
+        margin-bottom: 40px;
+    }
+    .description h1{
+        font-size: 40px;
+        line-height: 100%;
+    }
+    .description p{
+        font-size: 18px;
+    }
+    .main_desc img{
+        width: 330px;
+        height: 380px;
+    }
+}
+
+@media(max-width:580px){
+    .main_desc{
+        padding: 50px 33px 0 33px;
+        margin-bottom: 50px;
+    }
+    .main_desc img{
+        width: 195px;
+        height: 239px;
+    }
+    .description{
+        width: 285px;
+    }
+    .description h1{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .main_description{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .description button{
+        padding: 14px 40px;
+        font-size:18px;
+    }
+}
+
+@media(max-width:320px){
+    .main_desc img{
+        display: none;
+    }
+    .main_desc{
+        padding: 60px 20px 0 15px;
+        margin-bottom: 60px;
+    }
+    .description{
+        margin-left:0;
+        width: 290px;
+    }
+    .description h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .main_description{
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    .description button{
+        padding: 14.5px 29px;
+    }
+}

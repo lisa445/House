@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Raleway_Bold';
+    src: url('../fonts/Raleway-v4020-Bold.otf');
+}
+@font-face {
+    font-family: 'Raleway_Light';
+    src: url('../fonts/Raleway-v4020-Light.otf');
+}
+@font-face {
+    font-family: 'Raleway_Regular';
+    src: url('../fonts/Raleway-v4020-Regular.otf');
+}
+@font-face {
+    font-family: 'Raleway_Thin';
+    src: url('../fonts/Raleway-v4020-Thin.otf');
+}
+@font-face {
+    font-family: 'Raleway_Medium';
+    src: url('../fonts/Raleway-v4020-Medium.otf');
+}
+:root{
+    --white: #F4F6F5;
+    --light_green:#E1EDE6;
+    --dark_green:#376B44;
+    --hover_green: #598D66;
+    --focus_green:#D4E8D9;
+    --light_gray:#86928B;
+    --dark_gray:#2C2D35;
+    --default_yellow: #EEDB6D;
+    --hover_yellow: #FAEB97;
+    --active_yellow: #D9B949;
+    --ochra: #A38314;
+
+    /*Fonts*/
+    --Raleway_B: 'Raleway_Bold', sans-serif;
+    --Raleway_L: 'Raleway_Light', sans-serif;
+    --Raleway_R: 'Raleway_Regular', sans-serif;
+    --Raleway_T: 'Raleway_Thin', sans-serif;
+    --Raleway_M: 'Raleway_Medium', sans-serif;
+
+}
+
+

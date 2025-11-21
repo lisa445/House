@@ -1,0 +1,118 @@
+.footer,.footer_links, .footer_dir, .logo_phone, .social_media{
+    display: flex;
+}
+.footer{
+    background: var(--light_green);
+    padding: 23px 165px;
+    justify-content: space-between;
+}
+.logo_phone, .social_media, .footer_dir{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logo_phone img{
+    margin-bottom: 28px;
+}
+.footer_dir{
+    margin-right: 60px;
+}
+.footer_dir:last-child{
+    margin-right: 0;
+}
+
+.phone p, .footer_dir a, .footer_dir h5, .social_media div p{
+    font-family: var(--Raleway_M);
+    font-weight: 500;
+    
+}
+.phone a{
+    margin-bottom: 8px;
+}
+.phone p, .footer_dir a{
+    color: var(--light_gray);
+    font-size: 18px;
+}
+ .footer_dir a{
+    text-decoration: none;
+    outline: transparent;
+    margin-bottom: 6px;
+}
+ .footer_dir a:last-child{
+    margin-bottom: 0px;
+ }
+.footer_dir h5{
+    font-size: 20px;
+    color: var(--dark_gray);
+    margin-bottom: 6px;
+}
+
+.social_media div p{
+    font-size: 12px;
+    color: var(--light_gray);
+}
+.media{
+    margin-bottom: 10px;
+}
+.media a{
+    margin-right: 30px;
+}
+.media a:last-child{
+    margin-right: 0px;
+}
+@media(max-width: 780px){
+    .footer{
+        padding: 23px 39px;
+        flex-direction: column;
+    }
+    .logo_phone{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer_link{
+        margin-right:0;
+        margin-bottom:10px;
+    }
+    .footer_dir{
+        margin-right: 0;
+    }
+    .footer_links{
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    .social_media{
+        align-items: center;
+    }
+}
+@media(max-width: 580px){
+    .footer{
+        padding: 23px 33px;
+    }
+    .footer_dir a, .phone p{
+        font-size: 16px;
+    }
+    .social_media div:last-child{
+        display: flex;
+    }
+}
+
+@media(max-width: 320px){
+    .footer{
+        padding: 23px 15px;
+    }
+    .footer_links, .logo_phone{
+        flex-direction:column;
+    }
+    .footer_dir {
+        margin-bottom: 20px;
+    }
+    .footer_dir:last-child{
+        margin-bottom: 0px;
+    }
+    .logo_phone img{
+        margin-bottom: 10px;
+    }
+    .logo_phone{
+        margin-bottom: 20px;
+    }
+}
+
